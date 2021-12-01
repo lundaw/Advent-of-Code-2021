@@ -61,4 +61,6 @@ int main() {
 	auto input = readInput("../../inputs/day1.txt");
 	std::cout << "[Part 1]: " << calculatePart1(input) << "\n"
 		<< "[Part 2]: " << calculatePart2(input);
+
+	return 0;
 }
