@@ -43,7 +43,7 @@ public class Main {
 	private static ArrayList<Integer> readInput() {
 		ArrayList<Integer> input = new ArrayList<>();
 		
-		try (BufferedReader br = new BufferedReader(new FileReader("../../inputs/day1.txt"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("../inputs/day1.txt"))) {
 			String line;
 			while ((line = br.readLine()) != null) {
 				input.add(Integer.parseInt(line));
