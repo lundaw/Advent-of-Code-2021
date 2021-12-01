@@ -18,7 +18,7 @@ Write-Host "[Part 1]: $($increaseCountPart1)"
 #region Part 2
 
 [int] $increaseCountPart2 = 0;
-for ($i = 0; $i -lt $inputData.Count - 2; $i++) {
+for ($i = 0; $i -lt $inputData.Count - 3; $i++) {
     [int] $firstWindow = $inputData | Select-Object -Skip $i -First 3 | Measure-Object -Sum | Select-Object -ExpandProperty Sum
     [int] $secondWindow = $inputData | Select-Object -Skip ($i+1) -First 3 | Measure-Object -Sum | Select-Object -ExpandProperty Sum
 

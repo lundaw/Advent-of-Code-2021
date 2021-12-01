@@ -26,7 +26,7 @@ int calculalatePart1(List<int> input) {
 int calculalatePart2(List<int> input) {
   int counter = 0;
 
-  for (var i = 0; i < input.length - 2; i++) {
+  for (var i = 0; i < input.length - 3; i++) {
     final int firstWindow = input.skip(i).take(3).reduce((sum, element) => sum + element);
     final int secondWindow = input.skip(i + 1).take(3).reduce((sum, element) => sum + element);
 

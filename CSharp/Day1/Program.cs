@@ -17,7 +17,7 @@ Console.WriteLine($"[Part 1]: Increasing measurements: {increaseCountPart1}");
 #region Part 2
 
 uint increaseCountPart2 = 0;
-for (var i = 0; i < input.Length - 2; i++)
+for (var i = 0; i < input.Length - 3; i++)
 {
 	if (input.Skip(i).Take(3).Sum() < input.Skip(i + 1).Take(3).Sum())
 	{
