@@ -1,7 +1,7 @@
 import 'dart:io';
 
 main() async {
-  final File input = new File("../inputs/day1.txt");
+  final File input = new File("../../inputs/day1.txt");
   final List<int> data = (await input.readAsLines().then((value) => value.map((e) => int.parse(e)))).toList();
   
   final int incrementsPart1 = calculalatePart1(data);
