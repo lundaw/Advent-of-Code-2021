@@ -51,7 +51,7 @@ public class Main {
 		} catch (FileNotFoundException e) {
 			System.out.println("Input file was not found in the inputs folder.");
 		} catch (IOException e) {
-			System.out.println("An IO error occured during reading the input file.");
+			System.out.println("An IO error occurred during reading the input file.");
 		}
 		
 		return input;
