@@ -1,5 +1,5 @@
 [System.Collections.ArrayList] $inputData = @()
-foreach ($line in Get-Content -Path "../inputs/day1.txt") {
+foreach ($line in Get-Content -Path "../../inputs/day1.txt") {
     $inputData.Add([int]::Parse($line)) | Out-Null
 }
 
