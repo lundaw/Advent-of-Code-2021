@@ -1,6 +1,6 @@
 [System.Collections.ArrayList] $inputData = @()
 foreach ($line in Get-Content -Path "../../inputs/day2.txt") {
-    $command, $units = $line.Split(' ');
+    $command, $units = $line.Split(' ')
     $units = [int]::Parse($units)
     $inputData.Add(($command, $units)) | Out-Null
 }
@@ -12,8 +12,8 @@ function Complete-PartOne {
         [System.Collections.ArrayList] $data
     )
 
-    [int] $position = 0;
-    [int] $depth = 0;
+    [int] $position = 0
+    [int] $depth = 0
 
     foreach ($entry in $data) {
         [string] $command, [int] $units = $entry
@@ -25,7 +25,7 @@ function Complete-PartOne {
         }
     }
 
-    return $position * $depth;
+    return $position * $depth
 }
 
 [int] $resultPart1 = Complete-PartOne($inputData)
@@ -40,9 +40,9 @@ function Complete-PartTwo {
         [System.Collections.ArrayList] $data
     )
 
-    [int] $position = 0;
-    [int] $depth = 0;
-    [int] $aim = 0;
+    [int] $position = 0
+    [int] $depth = 0
+    [int] $aim = 0
 
     foreach ($entry in $data) {
         [string] $command, [int] $units = $entry
@@ -54,7 +54,7 @@ function Complete-PartTwo {
         }
     }
 
-    return $position * $depth;
+    return $position * $depth
 }
 
 [int] $resultPart2 = Complete-PartTwo($inputData)
