@@ -4,14 +4,14 @@ main() async {
   final File input = new File("../../inputs/day2.txt");
   final List<String> data = await input.readAsLines();
 
-  final int resultPart1 = calculalatePart1(data);
+  final int resultPart1 = calculatePart1(data);
   print("[Part 1]: $resultPart1");
 
-  final int resultPart2 = calculalatePart2(data);
+  final int resultPart2 = calculatePart2(data);
   print("[Part 2]: $resultPart2");
 }
 
-int calculalatePart1(List<String> input) {
+int calculatePart1(List<String> input) {
   int position = 0;
   int depth = 0;
 
@@ -36,7 +36,7 @@ int calculalatePart1(List<String> input) {
   return position * depth;
 }
 
-int calculalatePart2(List<String> input) {
+int calculatePart2(List<String> input) {
   int position = 0;
   int depth = 0;
   int aim = 0;
